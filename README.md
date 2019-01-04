@@ -1,2 +1,3 @@
 # NBIO-UTAH
-Repository aimed to integrate efforts towards a meaningful goal
+Repository aimed to integrate our efforts in neural data analysis
+
