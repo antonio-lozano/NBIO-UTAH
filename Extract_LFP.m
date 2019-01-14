@@ -11,7 +11,7 @@
 % predifined value of 100 if not given any.
 %
 % It reordes the electrodes given the file 'Electrodes_Order.mat' and
-% includes de trigger saved in the .NEV file in the last line.
+% includes the trigger saved in the .NEV file in the last line.
 %
 % The resulting file can be loaded into braimstorm.
 
