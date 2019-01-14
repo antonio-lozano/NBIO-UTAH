@@ -2,8 +2,10 @@
 
 %      Extracts an LFP file:
 %
-% This function extracts loads de information in a .Ns6 file into a matlab
+% This function extracts loads the information in a .Ns6 file into a matlab
 % matrix in witch each line is the meassurement of an electrode
+%
+% It needs the functions openNEN and openNsx to be in any subfoulder.
 %
 % It also desamples the meassurement for a factor 'down'. It takes a
 % predifined value of 100 if not given any.
@@ -68,7 +70,7 @@ if down ~= 1
     data = downsample(data',down)';
 end
 
-% pasa la señal a microvoltios
+% pasa la seÃ±al a microvoltios
 data = 1000*double(data); % This is done after the downssmple to avoid the
 % overload of changing the format todouble precission. this format isneeded
 % to open the file in brainstorm
@@ -100,7 +102,7 @@ if trig == 1
         channel_t(trigger(i))= 1;
     end
     
-    % Downsamples the trigger leaving 1´s unchanged
+    % Downsamples the trigger leaving 1Â´s unchanged
     if down ~= 1
         channel_t1 = [];
         for i = 1: ceil(length(channel_t)/down)-1
