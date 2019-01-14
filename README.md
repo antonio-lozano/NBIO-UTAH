@@ -17,4 +17,4 @@ includes the trigger saved in the .NEV file in the last line.
 
 -Electrodes_Order:
 
-It is a vector contining the orther of the electrodesin the Utah array
+It is a vector contining the orther of the electrodesin the Utah array.
